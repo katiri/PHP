@@ -16,3 +16,12 @@
     echo '<br>';
     echo $num_negativo; // Imprime também números negativos
     echo '<br>';
+
+    $teste = 10;
+
+    if(is_int($teste)){
+        echo 'É um número inteiro <br>';
+    }
+    else{
+        echo 'Não é um inteiro <br>';
+    }
