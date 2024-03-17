@@ -30,6 +30,7 @@
     $x = 100;
     
     echo "$x global 2 <br>";
+    echo "<hr>";
 
     // Escopo global
     // São as variáveis que são declaradas fora de funções
@@ -58,3 +59,23 @@
     funcao();
 
     echo "$g <br>";
+    echo "<hr>";
+
+    // Escopo static
+    // Diferente das variaveis de escopo local, as de escopo static sempre mantém o valor atribuido a ela a cada execução da função que as envolve
+
+    function varStatic(){
+        $a = 0;
+        $a++;
+
+        static $b = 0;
+        $b++;
+
+        echo "Variavel local dentro da função: $a <br>";
+        echo "Variavel static dentro da função: $b <br>";
+    }
+
+    varStatic();
+    varStatic();
+    varStatic();
+
