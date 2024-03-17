@@ -79,3 +79,16 @@
     varStatic();
     varStatic();
 
+    echo "<hr>";
+
+    // Escopo de parâmetros de função
+    // Funcionam como variáveis de escopo local
+
+    function soma($j, $i){
+        echo $j + $i;
+        echo '<br>';
+    }
+    soma(10, 20);
+    soma(1, 2);
+    soma(0, -70);
+    // echo $j + $i; // Dá erro
