@@ -32,3 +32,29 @@
     echo "$x global 2 <br>";
 
     // Escopo global
+    // São as variáveis que são declaradas fora de funções
+    // Só são acessíveis dentro de uma função por meio de um método específico
+
+    $g = 'variavel global';
+
+    echo "$g <br>";
+
+    if(true){
+        echo "$g dentro de um if <br>";
+    }
+
+    function funcao(){
+        // echo "$g dentro da função <br>"; // Não funciona
+        
+        $g = 'variavel local';
+        echo "$g dentro da função <br>"; // Funciona
+
+        global $g;
+        echo "$g dentro da função <br>"; // Funciona
+
+        $g = 'variavel global alterada dentro da função';
+    }
+
+    funcao();
+
+    echo "$g <br>";
