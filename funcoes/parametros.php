@@ -23,6 +23,7 @@
     parametros("Faca", "Garfo"); // O segundo parametro é ignorado por que ele não é solicitado na função (Isso não é muito bom)
 
     
+
     // Mais de um parametro
     function descricaoPessoa($nome, $idade, $sexo){
         echo "$nome tem $idade anos e é do sexo $sexo <br>";
@@ -30,3 +31,25 @@
 
     descricaoPessoa('João', 22, 'Masculino');
     descricaoPessoa('Beatriz', 23, 'Feminino');
+
+
+
+    // Parametros padrão
+    function teste($a = 'Teste'){
+        echo "O valor de a é: $a <br>";
+    }
+
+    teste();
+    teste('João');
+    teste('Diogo');
+
+
+    // Uma boa prática é deixar os parametros padrão por último, se estiverem no começo e tiver um parametro obrigatório no final
+    // vai dar erro se a função for chamada sem os valores, isso me obriga a passar um valor para parametros padrão que estão no começo
+    function ordemParametros($a, $b = 'Último'){
+        echo "Valor de a é: $a <br>";
+        echo "Valor de b é: $b <br>";
+    }
+
+    ordemParametros('Primeiro');
+    ordemParametros('Início', 'Final');
