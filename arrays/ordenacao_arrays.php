@@ -34,3 +34,41 @@
     rsort($arr);
     mostrarArray($arr);
     echo "<hr>";
+
+
+
+    // Ordenação de Arrays Associativos
+
+    $arrAssoc = [
+        'João' => 12,
+        'Maria' => 19,
+        'Beatriz' => 25,
+        'Arthur' => 5,
+        'Thiago' => 22,
+    ];
+
+    // Ordenar pelos valores do array
+    print_r($arrAssoc);
+    echo "<br><br>";
+
+    asort($arrAssoc);
+    print_r($arrAssoc);
+    echo "<br><br>";
+
+    arsort($arrAssoc);
+    print_r($arrAssoc);
+    echo "<br><br>";
+    
+    echo "<br>";
+
+    // Ordenar pelas chaves do array
+    print_r($arrAssoc);
+    echo "<br><br>";
+
+    ksort($arrAssoc);
+    print_r($arrAssoc);
+    echo "<br><br>";
+
+    krsort($arrAssoc);
+    print_r($arrAssoc);
+    echo "<br><br>";
