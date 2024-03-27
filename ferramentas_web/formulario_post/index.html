@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aprendendo o GET com PHP</title>
+    </head>
+    <body>
+        <form action="processamento.php" method="post">
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="number" name="idade" placeholder="Idade">
+
+            <input type="checkbox" name="teste[]" value="1"> 1
+            <input type="checkbox" name="teste[]" value="2"> 2
+            <input type="checkbox" name="teste[]" value="3"> 3
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
