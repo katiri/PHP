@@ -14,6 +14,7 @@ Neste repositório cada commit é acompanhada de um novo arquivo ou modificaçã
 A seguir, estão destacados alguns dos projetos que realizei como parte do meu estudo de PHP, abrangendo tanto os projetos desenvolvidos em conjunto com o curso da Udemy quanto os projetos pessoais:
 
 - [Blog PHP](https://github.com/katiri/BlogPHP)
+- [Agenda PHP](https://github.com/katiri/AgendaPHP)
 
 ## Meta
 João Pedro Pazos Ramos - <jpedropazosramos@email.com>
