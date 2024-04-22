@@ -15,6 +15,7 @@ A seguir, estão destacados alguns dos projetos que realizei como parte do meu e
 
 - [Blog PHP](https://github.com/katiri/BlogPHP)
 - [Agenda PHP](https://github.com/katiri/AgendaPHP)
+- [MovieStar](https://github.com/katiri/MovieStar)
 
 ## Meta
 João Pedro Pazos Ramos - <jpedropazosramos@email.com>
